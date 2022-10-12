@@ -13,3 +13,18 @@ D:\Users\Principal\BYUI\10_.NET_Software_Development\GitRepository\Fretex26-CIT3
 D:\Users\Principal\BYUI\10_.NET_Software_Development\GitRepository\Fretex26-CIT365-F2022-BarraganFreddy\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.csproj.CoreCompileInputs.cache
 D:\Users\Principal\BYUI\10_.NET_Software_Development\GitRepository\Fretex26-CIT365-F2022-BarraganFreddy\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.exe
 D:\Users\Principal\BYUI\10_.NET_Software_Development\GitRepository\Fretex26-CIT365-F2022-BarraganFreddy\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.pdb
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\bin\Debug\MegaDesk-Barragan.exe.config
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\bin\Debug\MegaDesk-Barragan.exe
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\bin\Debug\MegaDesk-Barragan.pdb
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.csproj.AssemblyReference.cache
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.csproj.SuggestedBindingRedirects.cache
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk_Barragan.AddQuote.resources
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk_Barragan.DisplayQuote.resources
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk_Barragan.MainMenu.resources
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk_Barragan.Properties.Resources.resources
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk_Barragan.SearchQuotes.resources
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk_Barragan.ViewAllQuotes.resources
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.csproj.GenerateResource.cache
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.csproj.CoreCompileInputs.cache
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.exe
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.pdb
