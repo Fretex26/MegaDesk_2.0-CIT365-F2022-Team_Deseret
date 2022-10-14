@@ -275,7 +275,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MegaDesk_Barragan.Properties.Resources.pexels_karolina_grabowska_Quotes;
-            this.ClientSize = new System.Drawing.Size(752, 1050);
+            this.ClientSize = new System.Drawing.Size(752, 1204);
             this.Controls.Add(this.rushOrderTextBox);
             this.Controls.Add(this.materialUpDown);
             this.Controls.Add(this.returnButton);
