@@ -136,14 +136,17 @@ namespace MegaDesk_Barragan
             QuoteTotal = NewQuote.CalcQuote();
 
             //Serializing data to JSON file
-            string jsonCreate = JsonConvert.SerializeObject(NewQuote);
-            string jsonFile = @"quotes.json";
+            string jsonWrite = JsonConvert.SerializeObject(NewQuote);
+            const string jsonFile = @"quotes\quotes.json";
+            Console.WriteLine(jsonFile);
 
-            /*if (!File.Exists(jsonFile))
+            if (!File.Exists(jsonFile))
             {
                 using (StreamWriter sw = File.CreateText(jsonFile)) { }
             }
-            using (StreamWriter swa = File.AppendText(jsonFile)) { swa.WriteLine(jsonWrite); }*/
+            using (StreamWriter swa = File.AppendText(jsonFile)) { swa.WriteLine(jsonWrite); }
+
+            MessageBox.Show("Quote Submitted");
 
             //old code
             /*            DateTime today = DateTime.Now;
