@@ -28,3 +28,6 @@ C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_De
 C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.csproj.CoreCompileInputs.cache
 C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.exe
 C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.pdb
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Angela Brunst\OneDrive\Desktop\CIT365\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.csproj.CopyComplete

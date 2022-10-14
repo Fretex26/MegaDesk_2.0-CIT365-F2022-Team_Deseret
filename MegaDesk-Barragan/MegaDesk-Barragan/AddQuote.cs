@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace MegaDesk_Barragan
 {
@@ -132,6 +134,10 @@ namespace MegaDesk_Barragan
                 today.ToString("dd MMMM yyyy")
                 );
 
+            //Serializing data to JSON file
+            string jsonCreate = JsonConvert.SerializeObject(deskQuote);
+            string jsonFile = @"quotes.json";
+
             //Sending data to be desplayed in the Display Quote View
             DisplayQuote displayQuote = new DisplayQuote();
             displayQuote.customerName.Text = custName.Text;
@@ -155,6 +161,11 @@ namespace MegaDesk_Barragan
             {
                 e.Handled = true;
             }
+        }
+
+        private void materialUpDown_SelectedItemChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
