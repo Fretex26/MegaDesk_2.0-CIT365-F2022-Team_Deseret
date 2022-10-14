@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,9 +16,22 @@ namespace MegaDesk_Barragan
 {
     public partial class AddQuote : Form
     {
+
+        #region Add Quote Variables
+        public string CustomerName = String.Empty;
+        int DeskWidth = 0;
+        int DeskDepth = 0;
+        int Drawers = 0;
+        Desk.Material Material;
+        int RushDays = 0;
+        int QuoteTotal;
+        #endregion
+
         public AddQuote()
         {
             InitializeComponent();
+            List<Desk.Material> MaterialList = Enum.GetValues(typeof(Desk.Material)).Cast<Desk.Material>().ToList();
+            //materialUpDown = MaterialList;
         }
 
         //To check if the input in int
@@ -110,32 +124,50 @@ namespace MegaDesk_Barragan
         
         private void submitQuote_Click(object sender, EventArgs e)
         {
+            //New Code - Angela
             DateTime today = DateTime.Now;
+            DeskWidth = int.Parse(withTextBox.Text);
+            DeskDepth = int.Parse(depthTextBox.Text);
+            Drawers = int.Parse(drawersTextBox.Text);
+            //Material = (Desk.Material)materialUpDown.SelectedItem;
+            RushDays = int.Parse(rushOrderTextBox.Text);
 
-            //Desk creation
-            Desk desk = new Desk(
-                Convert.ToDouble(withTextBox.Text),
-                Convert.ToDouble(depthTextBox.Text),
-                Convert.ToDouble(drawersTextBox.Text), 
-                materialUpDown.Text);
-
-            //If they choose Normal or don't choose any thing for the rush option
-            if (CheckInt(rushOrderTextBox.Text))
-                Convert.ToDouble(rushOrderTextBox.Text);
-            else
-                rushOrderTextBox.Text = "14";
-
-            //DeskQuote creation
-            DeskQuote deskQuote = new DeskQuote(
-                desk,
-                Convert.ToDouble(rushOrderTextBox.Text),
-                custName.Text,
-                today.ToString("dd MMMM yyyy")
-                );
+            DeskQuote NewQuote = new DeskQuote(CustomerName, today, DeskWidth, DeskDepth, Drawers, Material, RushDays);
+            QuoteTotal = NewQuote.CalcQuote();
 
             //Serializing data to JSON file
-            string jsonCreate = JsonConvert.SerializeObject(deskQuote);
+            string jsonCreate = JsonConvert.SerializeObject(NewQuote);
             string jsonFile = @"quotes.json";
+
+            /*if (!File.Exists(jsonFile))
+            {
+                using (StreamWriter sw = File.CreateText(jsonFile)) { }
+            }
+            using (StreamWriter swa = File.AppendText(jsonFile)) { swa.WriteLine(jsonWrite); }*/
+
+            //old code
+            /*            DateTime today = DateTime.Now;
+
+                        //Desk creation
+                        Desk desk = new Desk(
+                            Convert.ToDouble(withTextBox.Text),
+                            Convert.ToDouble(depthTextBox.Text),
+                            Convert.ToDouble(drawersTextBox.Text), 
+                            materialUpDown.Text);
+
+                        //If they choose Normal or don't choose any thing for the rush option
+                        if (CheckInt(rushOrderTextBox.Text))
+                            Convert.ToDouble(rushOrderTextBox.Text);
+                        else
+                            rushOrderTextBox.Text = "14";
+
+                        //DeskQuote creation
+                        DeskQuote deskQuote = new DeskQuote(
+                            desk,
+                            Convert.ToDouble(rushOrderTextBox.Text),
+                            custName.Text,
+                            today.ToString("dd MMMM yyyy")
+                            );*/
 
             //Sending data to be desplayed in the Display Quote View
             DisplayQuote displayQuote = new DisplayQuote();
@@ -146,7 +178,7 @@ namespace MegaDesk_Barragan
             displayQuote.material.Text = materialUpDown.Text;
             displayQuote.rushOrder.Text = rushOrderTextBox.Text;
             displayQuote.quoteDate.Text = today.ToString("dd MMMM yyyy");
-            displayQuote.quoteAmount.Text = ($"${deskQuote.total.ToString()}");   
+            displayQuote.quoteAmount.Text = ($"${NewQuote.total.ToString()}");   
 
             displayQuote.Show();
             this.Close();

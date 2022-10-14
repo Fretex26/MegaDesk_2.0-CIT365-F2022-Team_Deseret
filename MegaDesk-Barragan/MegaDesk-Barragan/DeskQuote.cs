@@ -10,6 +10,7 @@ namespace MegaDesk_Barragan
 {
     class DeskQuote
     {
+        //new code - Angela
         #region Quote Variables
         public int rushDays;
         public string customerName;

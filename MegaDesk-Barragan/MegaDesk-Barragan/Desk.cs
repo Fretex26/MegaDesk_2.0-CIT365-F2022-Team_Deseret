@@ -8,6 +8,7 @@ namespace MegaDesk_Barragan
 {
     class Desk
     {
+        //New code - Angela
         #region desk variables
         public int width { get; set; }
         public int depth { get; set; }
