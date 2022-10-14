@@ -13,3 +13,18 @@ D:\Users\Principal\BYUI\10_.NET_Software_Development\GitRepository\Fretex26-CIT3
 D:\Users\Principal\BYUI\10_.NET_Software_Development\GitRepository\Fretex26-CIT365-F2022-BarraganFreddy\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.csproj.CoreCompileInputs.cache
 D:\Users\Principal\BYUI\10_.NET_Software_Development\GitRepository\Fretex26-CIT365-F2022-BarraganFreddy\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.exe
 D:\Users\Principal\BYUI\10_.NET_Software_Development\GitRepository\Fretex26-CIT365-F2022-BarraganFreddy\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.pdb
+D:\Users\Principal\BYUI\10_.NET_Software_Development\Nueva carpeta\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\bin\Debug\MegaDesk-Barragan.exe.config
+D:\Users\Principal\BYUI\10_.NET_Software_Development\Nueva carpeta\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\bin\Debug\MegaDesk-Barragan.exe
+D:\Users\Principal\BYUI\10_.NET_Software_Development\Nueva carpeta\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\bin\Debug\MegaDesk-Barragan.pdb
+D:\Users\Principal\BYUI\10_.NET_Software_Development\Nueva carpeta\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.csproj.AssemblyReference.cache
+D:\Users\Principal\BYUI\10_.NET_Software_Development\Nueva carpeta\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.csproj.SuggestedBindingRedirects.cache
+D:\Users\Principal\BYUI\10_.NET_Software_Development\Nueva carpeta\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk_Barragan.AddQuote.resources
+D:\Users\Principal\BYUI\10_.NET_Software_Development\Nueva carpeta\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk_Barragan.DisplayQuote.resources
+D:\Users\Principal\BYUI\10_.NET_Software_Development\Nueva carpeta\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk_Barragan.MainMenu.resources
+D:\Users\Principal\BYUI\10_.NET_Software_Development\Nueva carpeta\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk_Barragan.Properties.Resources.resources
+D:\Users\Principal\BYUI\10_.NET_Software_Development\Nueva carpeta\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk_Barragan.SearchQuotes.resources
+D:\Users\Principal\BYUI\10_.NET_Software_Development\Nueva carpeta\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk_Barragan.ViewAllQuotes.resources
+D:\Users\Principal\BYUI\10_.NET_Software_Development\Nueva carpeta\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.csproj.GenerateResource.cache
+D:\Users\Principal\BYUI\10_.NET_Software_Development\Nueva carpeta\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.csproj.CoreCompileInputs.cache
+D:\Users\Principal\BYUI\10_.NET_Software_Development\Nueva carpeta\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.exe
+D:\Users\Principal\BYUI\10_.NET_Software_Development\Nueva carpeta\MegaDesk_2.0-CIT365-F2022-Team_Deseret\MegaDesk-Barragan\MegaDesk-Barragan\obj\Debug\MegaDesk-Barragan.pdb
