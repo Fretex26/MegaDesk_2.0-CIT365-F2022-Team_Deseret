@@ -26,14 +26,14 @@ namespace MegaDesk_Barragan
 
         private void view_Quote_Click(object sender, EventArgs e)
         {
-            DisplayQuote displayQuote = new DisplayQuote();
-            displayQuote.Show();
+            ViewAllQuotes viewQuotes = new ViewAllQuotes();
+            viewQuotes.Show();
             this.Hide();
         }
 
         private void search_Quotes_Click(object sender, EventArgs e)
         {
-            ViewAllQuotes searchQuotes = new ViewAllQuotes();
+            SearchQuotes searchQuotes = new SearchQuotes();
             searchQuotes.Show();
             this.Hide();
         }

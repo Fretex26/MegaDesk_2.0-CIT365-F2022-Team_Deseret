@@ -109,6 +109,10 @@
       <DependentUpon>ViewAllQuotes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Desk.Material.datasource" />
+    <None Include="Properties\DataSources\ViewAllQuotes.datasource" />
+    <None Include="Properties\DataSources\ViewAllQuotes.Desk.datasource" />
+    <None Include="Properties\DataSources\ViewAllQuotes.QuoteList.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
