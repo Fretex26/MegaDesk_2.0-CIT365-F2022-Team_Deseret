@@ -45,7 +45,7 @@
             this.add_New_Quote.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.add_New_Quote.Location = new System.Drawing.Point(79, 68);
             this.add_New_Quote.Name = "add_New_Quote";
-            this.add_New_Quote.Size = new System.Drawing.Size(156, 34);
+            this.add_New_Quote.Size = new System.Drawing.Size(194, 39);
             this.add_New_Quote.TabIndex = 0;
             this.add_New_Quote.Text = "Add New Quote";
             this.add_New_Quote.UseVisualStyleBackColor = false;
@@ -62,9 +62,9 @@
             this.view_Quote.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.view_Quote.Location = new System.Drawing.Point(273, 68);
             this.view_Quote.Name = "view_Quote";
-            this.view_Quote.Size = new System.Drawing.Size(156, 34);
+            this.view_Quote.Size = new System.Drawing.Size(193, 39);
             this.view_Quote.TabIndex = 1;
-            this.view_Quote.Text = "View Quote";
+            this.view_Quote.Text = "View All Quotes";
             this.view_Quote.UseVisualStyleBackColor = false;
             this.view_Quote.Click += new System.EventHandler(this.view_Quote_Click);
             // 
@@ -79,7 +79,7 @@
             this.search_Quotes.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.search_Quotes.Location = new System.Drawing.Point(79, 130);
             this.search_Quotes.Name = "search_Quotes";
-            this.search_Quotes.Size = new System.Drawing.Size(156, 34);
+            this.search_Quotes.Size = new System.Drawing.Size(183, 39);
             this.search_Quotes.TabIndex = 2;
             this.search_Quotes.Text = "Search Quotes";
             this.search_Quotes.UseVisualStyleBackColor = false;
@@ -96,7 +96,7 @@
             this.exit.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.exit.Location = new System.Drawing.Point(273, 130);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(156, 34);
+            this.exit.Size = new System.Drawing.Size(156, 39);
             this.exit.TabIndex = 3;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = false;
