@@ -34,5 +34,12 @@ namespace MegaDesk_Barragan
             quoteDate = currentDate;
             quoteAmount = price;
         }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
+            this.Close();
+        }
     }
 }

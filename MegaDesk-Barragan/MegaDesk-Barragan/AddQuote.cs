@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static MegaDesk_Barragan.Desk;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace MegaDesk_Barragan
 {
@@ -129,32 +130,34 @@ namespace MegaDesk_Barragan
 
             //New Code - Angela
             DateTime today = DateTime.Now;
+            CustomerName = custName.Text;
             DeskWidth = int.Parse(withTextBox.Text);
             DeskDepth = int.Parse(depthTextBox.Text);
             Drawers = int.Parse(drawersTextBox.Text);
             //Material = (Desk.Material)materialUpDown.SelectedItem;
             RushDays = int.Parse(rushOrderTextBox.Text);
+            int DesktopMaterial = 0;
 
             switch (materialUpDown.SelectedItem)
             {
                 case "Laminate":
-                    desk.DesktopMaterial = Desk.Material.Laminate;
+                    DesktopMaterial = (int)Desk.Material.Laminate;
                     break;
                 case "Oak":
-                    desk.DesktopMaterial = Desk.Material.Oak;
+                    DesktopMaterial = (int)Desk.Material.Oak;
                     break;
                 case "Rosewood":
-                    desk.DesktopMaterial = Desk.Material.Rosewood;
+                    DesktopMaterial = (int)Desk.Material.Rosewood;
                     break;
                 case "Veneer":
-                    desk.DesktopMaterial = Desk.Material.Veneer;
+                    DesktopMaterial = (int)Desk.Material.Veneer;
                     break;
                 case "Pine":
-                    desk.DesktopMaterial = Desk.Material.Pine;
+                    DesktopMaterial = (int)Desk.Material.Pine;
                     break;
             }
 
-            DeskQuote NewQuote = new DeskQuote(CustomerName, today, DeskWidth, DeskDepth, Drawers, desk.DesktopMaterial, RushDays);
+            DeskQuote NewQuote = new DeskQuote(CustomerName, today, DeskWidth, DeskDepth, Drawers, DesktopMaterial, RushDays);
             QuoteTotal = NewQuote.CalcQuote();
 
             //Serializing data to JSON file

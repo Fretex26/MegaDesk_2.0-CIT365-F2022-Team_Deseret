@@ -43,6 +43,7 @@
             this.price = new System.Windows.Forms.Label();
             this.priceTitle = new System.Windows.Forms.Label();
             this.currentDate = new System.Windows.Forms.Label();
+            this.homeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // customer_Name
@@ -224,12 +225,23 @@
             this.currentDate.Size = new System.Drawing.Size(0, 21);
             this.currentDate.TabIndex = 14;
             // 
+            // homeButton
+            // 
+            this.homeButton.Location = new System.Drawing.Point(628, 280);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(75, 23);
+            this.homeButton.TabIndex = 15;
+            this.homeButton.Text = "Home";
+            this.homeButton.UseVisualStyleBackColor = true;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
+            // 
             // DisplayQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MegaDesk_Barragan.Properties.Resources.pexels_dayvison_de_oliveira_silva_quote;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.homeButton);
             this.Controls.Add(this.currentDate);
             this.Controls.Add(this.price);
             this.Controls.Add(this.priceTitle);
@@ -269,5 +281,6 @@
         private System.Windows.Forms.Label price;
         private System.Windows.Forms.Label priceTitle;
         private System.Windows.Forms.Label currentDate;
+        private System.Windows.Forms.Button homeButton;
     }
 }
