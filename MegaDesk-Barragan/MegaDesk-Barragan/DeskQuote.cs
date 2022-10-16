@@ -32,10 +32,10 @@ namespace MegaDesk_Barragan
         int DeskMaterial;
         #endregion
 
-        public DeskQuote(string customerName, DateTime quoteDate, int width, int depth, int numberOfDrawers, Desk.Material material, int rushDays)
+        public DeskQuote(string customerName, DateTime quoteDate, int width, int depth, int numberOfDrawers, int material, int rushDays)
         {
-            customerName = customerName;
-            quoteDate = quoteDate;
+            this.customerName = customerName;
+            this.quoteDate = quoteDate;
             Desk.width = width;
             Desk.depth = depth;
             Desk.numberOfDrawers = numberOfDrawers;

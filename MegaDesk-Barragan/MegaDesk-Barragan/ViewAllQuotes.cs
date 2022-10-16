@@ -27,6 +27,7 @@ namespace MegaDesk_Barragan
             {
                 theQuotes.Add(jsonLine);
             };
+            
             //QuoteList quoteList = new QuoteList();
             //Rootobject quoteList = new Rootobject();
             List<object> allQuotes = new List<object>();
@@ -84,5 +85,11 @@ namespace MegaDesk_Barragan
             public int Area { get; set; }
         }
 
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
+            this.Close();
+        }
     }
 }

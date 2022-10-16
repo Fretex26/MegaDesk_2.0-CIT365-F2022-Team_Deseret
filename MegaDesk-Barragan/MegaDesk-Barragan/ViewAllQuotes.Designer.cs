@@ -30,8 +30,6 @@
         {
             this.view_All_Quotes = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QuoteDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DeskWidth = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,6 +38,9 @@
             this.DesktopMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RushDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.homeButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             this.view_All_Quotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.view_All_Quotes.Location = new System.Drawing.Point(448, 44);
             this.view_All_Quotes.Name = "view_All_Quotes";
-            this.view_All_Quotes.Size = new System.Drawing.Size(183, 29);
+            this.view_All_Quotes.Size = new System.Drawing.Size(144, 24);
             this.view_All_Quotes.TabIndex = 2;
             this.view_All_Quotes.Text = "View All Quotes";
             // 
@@ -70,22 +71,6 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1055, 316);
             this.dataGridView1.TabIndex = 3;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "customerName";
-            this.dataGridViewTextBoxColumn1.HeaderText = "customerName";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "customerName";
-            this.dataGridViewTextBoxColumn2.HeaderText = "customerName";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
             // 
             // CustomerName
             // 
@@ -151,11 +136,38 @@
             this.Total.ReadOnly = true;
             this.Total.Width = 125;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "customerName";
+            this.dataGridViewTextBoxColumn1.HeaderText = "customerName";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "customerName";
+            this.dataGridViewTextBoxColumn2.HeaderText = "customerName";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // homeButton
+            // 
+            this.homeButton.Location = new System.Drawing.Point(498, 474);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(75, 23);
+            this.homeButton.TabIndex = 4;
+            this.homeButton.Text = "Home";
+            this.homeButton.UseVisualStyleBackColor = true;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
+            // 
             // ViewAllQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1091, 532);
+            this.Controls.Add(this.homeButton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.view_All_Quotes);
             this.Name = "ViewAllQuotes";
@@ -180,5 +192,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DesktopMaterial;
         private System.Windows.Forms.DataGridViewTextBoxColumn RushDays;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
+        private System.Windows.Forms.Button homeButton;
     }
 }
