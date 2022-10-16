@@ -167,6 +167,7 @@ namespace MegaDesk_Barragan
                         break;
 
                     default:
+                        rushPrice = 14;
                         break;
                 }
                 return rushPrice;
