@@ -1,5 +1,32 @@
+<<<<<<< HEAD
 {"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":400,"Desk":{"width":44,"depth":22,"numberOfDrawers":4,"DesktopMaterial":0,"Area":968}}
 {"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":1186,"Desk":{"width":44,"depth":44,"numberOfDrawers":1,"DesktopMaterial":0,"Area":1936}}
 {"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":250,"Desk":{"width":33,"depth":22,"numberOfDrawers":1,"DesktopMaterial":0,"Area":726}}
 {"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":400,"Desk":{"width":25,"depth":25,"numberOfDrawers":4,"DesktopMaterial":0,"Area":625}}
 {"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":550,"Desk":{"width":27,"depth":25,"numberOfDrawers":7,"DesktopMaterial":0,"Area":675}}
+=======
+{"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":1580,"Desk":{"width":65,"depth":32,"numberOfDrawers":6,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":1580,"Desk":{"width":65,"depth":32,"numberOfDrawers":6,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":200,"Desk":{"width":65,"depth":32,"numberOfDrawers":3,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":1280,"Desk":{"width":65,"depth":32,"numberOfDrawers":4,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":2580,"Desk":{"width":65,"depth":32,"numberOfDrawers":6,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":2280,"Desk":{"width":65,"depth":32,"numberOfDrawers":6,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":2580,"Desk":{"width":65,"depth":32,"numberOfDrawers":6,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":2580,"Desk":{"width":65,"depth":32,"numberOfDrawers":6,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":0,"Desk":{"width":32,"depth":32,"numberOfDrawers":6,"DesktopMaterial":0,"Area":1024}}
+{"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":0,"Desk":{"width":65,"depth":32,"numberOfDrawers":6,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":2080,"Desk":{"width":65,"depth":32,"numberOfDrawers":6,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":2080,"Desk":{"width":65,"depth":32,"numberOfDrawers":3,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":0,"Desk":{"width":65,"depth":32,"numberOfDrawers":3,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":0,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":0,"Desk":{"width":65,"depth":32,"numberOfDrawers":3,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":5,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":5,"Desk":{"width":65,"depth":32,"numberOfDrawers":3,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":5,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":60,"Desk":{"width":65,"depth":32,"numberOfDrawers":3,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":3,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":0,"Desk":{"width":65,"depth":32,"numberOfDrawers":3,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":3,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":0,"Desk":{"width":65,"depth":32,"numberOfDrawers":3,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":5,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":0,"Desk":{"width":32,"depth":32,"numberOfDrawers":3,"DesktopMaterial":0,"Area":1024}}
+{"rushDays":3,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":0,"Desk":{"width":65,"depth":32,"numberOfDrawers":3,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":5,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":2640,"Desk":{"width":65,"depth":32,"numberOfDrawers":6,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":3,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":100,"Desk":{"width":65,"depth":32,"numberOfDrawers":3,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":5,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":2740,"Desk":{"width":65,"depth":32,"numberOfDrawers":6,"DesktopMaterial":0,"Area":2080}}
+{"rushDays":5,"customerName":null,"quoteDate":"0001-01-01T00:00:00","total":2740,"Desk":{"width":65,"depth":32,"numberOfDrawers":6,"DesktopMaterial":0,"Area":2080}}
+>>>>>>> 3df002acfc171df843d94fae8717c526583f4f48

@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static MegaDesk_Barragan.Desk;
 
 namespace MegaDesk_Barragan
 {
@@ -124,6 +125,8 @@ namespace MegaDesk_Barragan
         
         private void submitQuote_Click(object sender, EventArgs e)
         {
+            Desk desk = new Desk();
+
             //New Code - Angela
             DateTime today = DateTime.Now;
             DeskWidth = int.Parse(withTextBox.Text);
@@ -132,7 +135,26 @@ namespace MegaDesk_Barragan
             //Material = (Desk.Material)materialUpDown.SelectedItem;
             RushDays = int.Parse(rushOrderTextBox.Text);
 
-            DeskQuote NewQuote = new DeskQuote(CustomerName, today, DeskWidth, DeskDepth, Drawers, Material, RushDays);
+            switch (materialUpDown.SelectedItem)
+            {
+                case "Laminate":
+                    desk.DesktopMaterial = Desk.Material.Laminate;
+                    break;
+                case "Oak":
+                    desk.DesktopMaterial = Desk.Material.Oak;
+                    break;
+                case "Rosewood":
+                    desk.DesktopMaterial = Desk.Material.Rosewood;
+                    break;
+                case "Veneer":
+                    desk.DesktopMaterial = Desk.Material.Veneer;
+                    break;
+                case "Pine":
+                    desk.DesktopMaterial = Desk.Material.Pine;
+                    break;
+            }
+
+            DeskQuote NewQuote = new DeskQuote(CustomerName, today, DeskWidth, DeskDepth, Drawers, desk.DesktopMaterial, RushDays);
             QuoteTotal = NewQuote.CalcQuote();
 
             //Serializing data to JSON file
