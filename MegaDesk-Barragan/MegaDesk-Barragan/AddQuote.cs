@@ -135,26 +135,26 @@ namespace MegaDesk_Barragan
             //Material = (Desk.Material)materialUpDown.SelectedItem;
             RushDays = int.Parse(rushOrderTextBox.Text);
 
-            //switch (materialUpDown.SelectedItem)
-            //{
-            //    case "Laminate":
-            //        desk = DesktopMaterial.Laminate;
-            //        break;
-            //    case "Oak":
-            //        material = DesktopMaterial.Oak;
-            //        break;
-            //    case "Rosewood":
-            //        material = DesktopMaterial.Rosewood;
-            //        break;
-            //    case "Veneer":
-            //        material = DesktopMaterial.Veneer;
-            //        break;
-            //    case "Pine":
-            //        material = DesktopMaterial.Pine;
-            //        break;
-            //}
+            switch (materialUpDown.SelectedItem)
+            {
+                case "Laminate":
+                    desk.DesktopMaterial = Desk.Material.Laminate;
+                    break;
+                case "Oak":
+                    desk.DesktopMaterial = Desk.Material.Oak;
+                    break;
+                case "Rosewood":
+                    desk.DesktopMaterial = Desk.Material.Rosewood;
+                    break;
+                case "Veneer":
+                    desk.DesktopMaterial = Desk.Material.Veneer;
+                    break;
+                case "Pine":
+                    desk.DesktopMaterial = Desk.Material.Pine;
+                    break;
+            }
 
-            DeskQuote NewQuote = new DeskQuote(CustomerName, today, DeskWidth, DeskDepth, Drawers, Material, RushDays);
+            DeskQuote NewQuote = new DeskQuote(CustomerName, today, DeskWidth, DeskDepth, Drawers, desk.DesktopMaterial, RushDays);
             QuoteTotal = NewQuote.CalcQuote();
 
             //Serializing data to JSON file
