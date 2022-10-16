@@ -29,7 +29,7 @@ namespace MegaDesk_Barragan
         private const int PRICE_PER_DRAWER = 50;
         private const int PRICE_PER_AREA = 1;
         private const int RUSH_CAPACITY = 2000;
-        int materiale;
+        int DeskMaterial;
         #endregion
 
         public DeskQuote(string customerName, DateTime quoteDate, int width, int depth, int numberOfDrawers, Desk.Material material, int rushDays)
@@ -39,7 +39,7 @@ namespace MegaDesk_Barragan
             Desk.width = width;
             Desk.depth = depth;
             Desk.numberOfDrawers = numberOfDrawers;
-            materiale = Convert.ToInt32( material);
+            DeskMaterial = (int)material;
             this.rushDays = rushDays;
 
             //Desk Area
@@ -48,7 +48,7 @@ namespace MegaDesk_Barragan
 
         public int CalcQuote()
         {
-            return total = PRICE_BASE + AreaCost() + DrawerCost() + (int)Desk.DesktopMaterial + RushCost();
+            return total = PRICE_BASE + AreaCost() + DrawerCost() + DeskMaterial + RushCost();
         }
 
         private int AreaCost()
