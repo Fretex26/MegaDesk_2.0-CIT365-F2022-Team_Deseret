@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static MegaDesk_Barragan.Desk;
+using static MegaDesk_Barragan.ViewAllQuotes;
 
 namespace MegaDesk_Barragan
 {
@@ -27,6 +29,7 @@ namespace MegaDesk_Barragan
         private const int PRICE_PER_DRAWER = 50;
         private const int PRICE_PER_AREA = 1;
         private const int RUSH_CAPACITY = 2000;
+        int materiale;
         #endregion
 
         public DeskQuote(string customerName, DateTime quoteDate, int width, int depth, int numberOfDrawers, Desk.Material material, int rushDays)
@@ -36,8 +39,8 @@ namespace MegaDesk_Barragan
             Desk.width = width;
             Desk.depth = depth;
             Desk.numberOfDrawers = numberOfDrawers;
-            Desk.DesktopMaterial = material;
-            rushDays = rushDays;
+            materiale = Convert.ToInt32( material);
+            this.rushDays = rushDays;
 
             //Desk Area
             Desk.Area = Desk.width * Desk.depth;
@@ -52,7 +55,8 @@ namespace MegaDesk_Barragan
         {
             if (Desk.Area > SIZE_CAPACITY)
             {
-                return (Desk.Area - SIZE_CAPACITY) * PRICE_PER_AREA;
+                //return (Desk.Area - SIZE_CAPACITY) * PRICE_PER_AREA;
+                return Desk.Area * PRICE_PER_AREA;
             }
             else
             {
@@ -70,7 +74,7 @@ namespace MegaDesk_Barragan
 
         //insert code for rushorder text file
 
-        private int RushCost()
+        private int RushCosta()
         {
             int rushCost = 0;
 
@@ -107,6 +111,74 @@ namespace MegaDesk_Barragan
             }
 
             return rushCost;
+        }
+
+        private int RushCost()
+        {
+            try
+            {
+                // Create an instance of StreamReader to read from a file.
+                // The using statement also closes the StreamReader.
+                int rushPrice = 0;
+                int[,] rushPrices = new int[3, 3];
+                using (StreamReader sr = new StreamReader("rushOrderPrices.txt"))
+                {
+                    string line;
+                    // Read and display lines from the file until the end of
+                    // the file is reached.
+                    for (int i = 0; i < 3; i++)
+                    {
+                        for (int j = 0; j < 3; j++)
+                        {
+                            line = sr.ReadLine();
+                            rushPrices[i, j] = Convert.ToInt32(line);
+                        }
+                    }
+                }
+
+                //Adds to the price the amount of money according to the rush Order, if no option was selected it just ignores all of this
+                switch (rushDays)
+                {
+                    case 3:
+                        if (Desk.Area < 1000)
+                            rushPrice = rushPrices[0, 0];
+                        else if (Desk.Area < 2001)
+                            rushPrice = rushPrices[0, 1];
+                        else if (Desk.Area > 2000)
+                            rushPrice = rushPrices[0, 2];
+                        break;
+
+                    case 5:
+                        if (Desk.Area < 1000)
+                            rushPrice = rushPrices[1, 0];
+                        else if (Desk.Area < 2001)
+                            rushPrice = rushPrices[1, 1];
+                        else if (Desk.Area > 2000)
+                            rushPrice = rushPrices[1, 2];
+                        break;
+
+                    case 7:
+                        if (Desk.Area < 1000)
+                            rushPrice = rushPrices[2, 0];
+                        else if (Desk.Area < 2001)
+                            rushPrice = rushPrices[2, 1];
+                        else if (Desk.Area > 2000)
+                            rushPrice = rushPrices[2, 2];
+                        break;
+
+                    default:
+                        break;
+                }
+                return rushPrice;
+
+            }
+            catch (Exception e)
+            {
+                // Let the user know what went wrong.
+                Console.WriteLine("The file could not be read because:");
+                Console.WriteLine(e.Message);
+                return 0;
+            }
         }
 
         #endregion
