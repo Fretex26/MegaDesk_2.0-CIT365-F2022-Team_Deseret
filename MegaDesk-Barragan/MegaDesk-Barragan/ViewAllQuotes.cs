@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace MegaDesk_Barragan
 {
+    
     public partial class ViewAllQuotes : Form
     {
         public ViewAllQuotes()
@@ -26,19 +27,43 @@ namespace MegaDesk_Barragan
             {
                 theQuotes.Add(jsonLine);
             };
-            QuoteList quoteList = new QuoteList();
+            //QuoteList quoteList = new QuoteList();
+            //Rootobject quoteList = new Rootobject();
+            List<object> allQuotes = new List<object>();
+            int x = 0;
             foreach (string str in theQuotes)
             {
-                quoteList = JsonConvert.DeserializeObject<QuoteList>(str);
+                
+                Rootobject aQuote = JsonConvert.DeserializeObject<Rootobject>(str);
+                string customerName = "Invalid";
+                int rushDays = aQuote.rushDays;
+                if (aQuote.customerName != null) { customerName = aQuote.customerName.ToString(); }
+                System.DateTime quoteDate = aQuote.quoteDate;
+                string total = aQuote.total.ToString();
+                int deskWidth = aQuote.Desk.width;
+                int deskDepth = aQuote.Desk.depth;
+                int deskDrawers = aQuote.Desk.numberOfDrawers;
+                MegaDesk_Barragan.Desk.Material desktopMaterial = (MegaDesk_Barragan.Desk.Material)aQuote.Desk.DesktopMaterial;
+                string area = aQuote.Desk.Area.ToString();
+                //DeskQuote newQuote = new DeskQuote(customerName, quoteDate, deskWidth, deskDepth, deskDrawers, desktopMaterial, rushDays);
+                //allQuotes.Add(newQuote);
+                dataGridView1.Rows.Add();
+                dataGridView1[0, x].Value = customerName;
+                dataGridView1[1, x].Value = quoteDate;
+                dataGridView1[2, x].Value = deskWidth;
+                dataGridView1[3, x].Value = deskDepth;
+                dataGridView1[4, x].Value = deskDrawers;
+                dataGridView1[5, x].Value = desktopMaterial;
+                dataGridView1[6, x].Value = rushDays;
+                dataGridView1[7, x].Value = total;
+                x++;
             }
-            bindingSource1.DataSource = quoteList;
-            dataGridView1.DataSource = bindingSource1;
 
-    }
-        public class QuoteList
-        {
-            public List<Rootobject> quotes { get; set; }
         }
+        /*public class QuoteList
+        {
+            public List<DeskQuote> { get; set; }
+        }*/
 
 
         public class Rootobject
