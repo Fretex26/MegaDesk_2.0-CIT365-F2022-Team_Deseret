@@ -135,7 +135,12 @@ namespace MegaDesk_Barragan
             DeskDepth = int.Parse(depthTextBox.Text);
             Drawers = int.Parse(drawersTextBox.Text);
             //Material = (Desk.Material)materialUpDown.SelectedItem;
-            RushDays = int.Parse(rushOrderTextBox.Text);
+            if (rushOrderTextBox.Text == "3" ||
+                rushOrderTextBox.Text == "5" ||
+                rushOrderTextBox.Text == "7")
+                RushDays = int.Parse(rushOrderTextBox.Text);
+            else
+                RushDays = 14;
             int DesktopMaterial = 0;
 
             switch (materialUpDown.SelectedItem)
@@ -205,6 +210,12 @@ namespace MegaDesk_Barragan
             displayQuote.numOfDrawers.Text = drawersTextBox.Text;
             displayQuote.material.Text = materialUpDown.Text;
             displayQuote.rushOrder.Text = rushOrderTextBox.Text;
+            if (rushOrderTextBox.Text == "3" ||
+                rushOrderTextBox.Text == "5" ||
+                rushOrderTextBox.Text == "7")
+                displayQuote.rushOrder.Text = rushOrderTextBox.Text;
+            else
+                displayQuote.rushOrder.Text = "14";
             displayQuote.quoteDate.Text = today.ToString("dd MMMM yyyy");
             displayQuote.quoteAmount.Text = ($"${NewQuote.total.ToString()}");   
 
